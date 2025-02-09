@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
+.fluid {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.container {
+  max-width: 460px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  gap: 40px;
+  justify-content: start;
+  border-bottom: 2px solid black;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+}
+.section {
+  margin-top: 10px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: end;
+}
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.candle {
+  content: "";
+  width: 300px;
+  height: 0;
+  animation: grow 1s ease-out forwards;
+  -webkit-animation: grow 1s ease-out forwards;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.candle1 {
+  background-color: rgba(255, 0, 0, 0.5);
+  animation-delay: 0.1s;
+  height: 0;
+  --target-height: 300px;
+}
+.candle2 {
+  background-color: rgba(255, 166, 0, 0.5);
+  animation-delay: 0.2s;
+  height: 0;
+  --target-height: 250px;
+}
+.candle3 {
+  background-color: rgba(255, 255, 0, 0.5);
+  animation-delay: 0.3s;
+  height: 0;
+  --target-height: 200px;
+}
+.candle4 {
+  background-color: rgba(0, 128, 0, 0.5);
+  animation-delay: 0.4s;
+  height: 0;
+  --target-height: 150px;
+}
+.candle5 {
+  background-color: rgba(0, 0, 255, 0.5);
+  animation-delay: 0.5s;
+  height: 0;
+  --target-height: 100px;
+}
+.candle1:hover {
+  transform: scale(1.1, 1.1) translateY(-4.5%);
+  -webkit-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -moz-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -ms-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -o-transform: scale(1.1, 1.1) translateY(-4.5%);
+}
+.candle2:hover {
+  transform: scale(1.1, 1.1) translateY(-4.5%);
+  -webkit-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -moz-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -ms-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -o-transform: scale(1.1, 1.1) translateY(-4.5%);
+}
+.candle3:hover {
+  transform: scale(1.1, 1.1) translateY(-4.5%);
+  -webkit-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -moz-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -ms-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -o-transform: scale(1.1, 1.1) translateY(-4.5%);
+}
+.candle4:hover {
+  transform: scale(1.1, 1.1) translateY(-4.5%);
+  -webkit-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -moz-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -ms-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -o-transform: scale(1.1, 1.1) translateY(-4.5%);
+}
+.candle5:hover {
+  transform: scale(1.1, 1.1) translateY(-4.5%);
+  -webkit-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -moz-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -ms-transform: scale(1.1, 1.1) translateY(-4.5%);
+  -o-transform: scale(1.1, 1.1) translateY(-4.5%);
+}
+
+@keyframes grow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: var(--target-height);
+  }
+}

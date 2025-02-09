@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="head-text">Kalkulator Sederhana</h1>
+      <section class="main-content">
+        <div class="main">
+          <div class="layer">
+            <p id="count3"></p>
+            <p id="count2"></p>
+            <p id="count1">0</p>
+          </div>
+          <div class="grid-container">
+            <button onclick="clearAll()" id="deleteAll" class="grid-items1 variant1-grid" data-value="AC">AC</button>
+            <button onclick="AddOperations('%')" id="%" class="grid-items1 variant1-grid" data-value="%">%</button>
+            <button onclick="DeleteLast()" id="delete" class="grid-items1 variant1-grid" data-value="<-"><-</button>
+            <button onclick="AddOperations('/')" id=":" class="grid-items1 variant1-grid" data-value=":">:</button>
+          </div>
+          <div class="grid-container">
+            <button onclick="AddNumber(this)" id="7" class="grid-items1 variant2-grid" data-value="7">7</button>
+            <button onclick="AddNumber(this)" id="8" class="grid-items1 variant2-grid" data-value="8">8</button>
+            <button onclick="AddNumber(this)" id="9" class="grid-items1 variant2-grid" data-value="9">9</button>
+            <button onclick="AddOperations('*')" id="*" class="grid-items1 variant1-grid" data-value="*">x</button>
+          </div>
+          <div class="grid-container">
+            <button onclick="AddNumber(this)" id="4" class="grid-items1 variant2-grid" data-value="4">4</button>
+            <button onclick="AddNumber(this)" id="5" class="grid-items1 variant2-grid" data-value="5">5</button>
+            <button onclick="AddNumber(this)" id="6" class="grid-items1 variant2-grid" data-value="6">6</button>
+            <button onclick="AddOperations('-')" id="-" class="grid-items1 variant1-grid" data-value="-">-</button>
+          </div>
+          <div class="grid-container">
+            <button onclick="AddNumber(this)" id="1" class="grid-items1 variant2-grid" data-value="1">1</button>
+            <button onclick="AddNumber(this)" id="2" class="grid-items1 variant2-grid" data-value="2">2</button>
+            <button onclick="AddNumber(this)" id="3" class="grid-items1 variant2-grid" data-value="3">3</button>
+            <button onclick="AddOperations('+')" id="+" class="grid-items1 variant1-grid" data-value="+">+</button>
+          </div>
+          <div class="grid-container">
+            <button onclick="AddNumber(this)" id="00" class="grid-items1 variant2-grid" data-value="00">00</button>
+            <button onclick="AddNumber(this)" id="0" class="grid-items1 variant2-grid" data-value="0">0</button>
+            <button onclick="AddNumber(this)" id="," class="grid-items1 variant2-grid" data-value=",">,</button>
+            <button id="=" class="grid-items1 variant3-grid" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

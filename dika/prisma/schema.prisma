@@ -1,0 +1,76 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  User_Id      BigInt        @id @default(autoincrement())
+  google_id    Int
+  password     String?       @db.VarChar(225)
+  name         String?       @db.Char(255)
+  email        String        @unique @db.Char(255)
+  point_amount BigInt
+  items_total  BigInt
+  transsaction Transaction[]
+}
+
+model Transaction {
+  id           BigInt  @id @default(autoincrement())
+  total_items  BigInt
+  amount_point BigInt
+  uuid         String  @db.Char(15)
+  is_claimed   Boolean
+  userUser_Id  BigInt?
+  tsmTsm_id    BigInt?
+  itemId       BigInt?
+  User         User?   @relation(fields: [userUser_Id], references: [User_Id])
+  Tsm          Tsm?    @relation(fields: [tsmTsm_id], references: [tsm_id])
+  Item         Item?   @relation(fields: [itemId], references: [id])
+}
+
+model Tsm {
+  tsm_id       BigInt        @id @default(autoincrement())
+  title        BigInt
+  coordinate   String
+  ip_address   String        @db.Char(15)
+  password     String        @db.Char(15)
+  capacity     BigInt
+  transsaction Transaction[]
+}
+
+model Item {
+  id           BigInt        @id @default(autoincrement())
+  point        BigInt
+  fabric_type  BigInt
+  clothingType BigInt
+  transsaction Transaction[]
+}
+
+model Fabric_type {
+  id          BigInt @id @default(autoincrement())
+  percentage  BigInt
+  type_fabric BigInt
+}
+
+model Product {
+  id        BigInt   @id @default(autoincrement())
+  title     BigInt
+  price     BigInt
+  image_url String
+  Partner   Partner? @relation(fields: [partnerId], references: [id])
+  partnerId BigInt?
+}
+
+model Partner {
+  id           BigInt    @id @default(autoincrement())
+  name         BigInt
+  desc         BigInt
+  location_url BigInt
+  image        BigInt
+  city         BigInt
+  product      Product[]
+}

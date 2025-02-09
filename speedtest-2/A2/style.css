@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 28px;
+  border-bottom: 2px solid gray;
+  align-items: center;
+  width: 100%;
+}
+ul.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+ul.nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+ul.nav-list li:hover a {
+  color: salmon;
+}
+
+.logo {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.main-container {
+  width: 100%;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 40px 28px;
+}
+.card {
+  padding: 16px;
+  border: 2px solid aliceblue;
+  background-color: rgba(255, 160, 122, 0.6);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: relative;
+}
+.card .title {
+  font-size: larger;
+  margin: 10px 0 5px 0;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.card .line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  content: "";
+  margin-bottom: 10px;
+}
+.card p.desc {
+  font-size: small;
+  text-align: justify;
+  color: rgb(46, 46, 46);
+}
+.card p.total-views {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+.card p.total-comments {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.card p.total-views span {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.card p.total-comments span {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.card button {
+  background-color: salmon;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 18px;
+  border: 2px salmon solid;
+  outline: none;
+  color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

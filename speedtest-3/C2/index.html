@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C2</title>
+  </head>
+  <body>
+    <form onsubmit="HandleSubmit(event)" method="POST" style="display: flex; justify-content: start; margin-bottom: 10px">
+      <div>
+        <label for="x">X</label>
+        <input type="number" name="x" id="x" />
+      </div>
+      <div>
+        <label for="y">Y</label>
+        <input type="number" name="y" id="y" />
+      </div>
+      <button type="submit">split image</button>
+    </form>
+    <div>
+      <canvas></canvas>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

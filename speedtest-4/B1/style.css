@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.chart-container {
+  width: 30%;
+  min-height: 300px;
+}
+.chart-container .cf {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 48px;
+  padding-left: 48px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+.num-f {
+  padding-left: 56px;
+  display: flex;
+  justify-content: start;
+  gap: 66px;
+  align-items: end;
+  position: relative;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+.chart {
+  outline: none;
+  border: none;
+  width: 48px;
+  content: "";
+  animation: animate 1s ease-out forwards;
+  -webkit-animation: animate 1s ease-out forwards;
+}
+.chart:nth-child(1) {
+  background-color: crimson;
+  height: 0;
+  animation-delay: 0.2s;
+}
+.chart:nth-child(2) {
+  background-color: coral;
+  height: 0;
+  animation-delay: 0.4s;
+}
+.chart:nth-child(3) {
+  background-color: gold;
+  height: 0;
+  animation-delay: 0.6s;
+}
+.chart:nth-child(4) {
+  background-color: greenyellow;
+  height: 0;
+  animation-delay: 0.8s;
+}
+.chart:nth-child(5) {
+  background-color: cyan;
+  height: 0;
+  animation-delay: 1s;
+}
+@keyframes animate {
+  0% {
+    height: 0 !important;
+  }
+  100% {
+    height: var(--height-full);
+  }
+}

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+table {
+  max-width: 60%;
+  width: 100%;
+}
+thead {
+  border: gray 6px solid;
+  background-color: beige;
+}
+tbody {
+  border: gray 6px solid;
+  background-color: azure;
+}
+tr {
+  padding: 6px;
+}
+td {
+  text-align: center;
+  padding: 10px 10px;
+}
+th {
+  text-align: center;
+  padding: 10px 10px;
+}

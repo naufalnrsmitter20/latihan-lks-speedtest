@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-bottom: 1px rgba(128, 128, 128, 0.4) solid;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+.nav-container h2 {
+  font-size: 1.6rem;
+  color: rgb(226, 109, 0);
+}
+.nav-container ul li a {
+  font-weight: normal;
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.sect-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.sect-container .sub {
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+.sect-container .sub h1 {
+  font-weight: 600;
+  color: black;
+  line-height: 6rem;
+  font-size: 5rem;
+}
+.sect-container .sub p {
+  font-weight: 500;
+  color: gray;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sect-container .sub .input-group {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 700px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+input {
+  padding: 24px 26px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.1);
+  outline: none;
+  border: none;
+}
+input::placeholder {
+  color: rgba(128, 128, 128, 0.719);
+  font-size: 1rem;
+}
+button {
+  padding: 12px 24px;
+  right: 6px;
+  top: 12px;
+  border: 1px solid rgb(216, 84, 36);
+  background-color: rgb(216, 84, 36);
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  cursor: pointer;
+}
+.sect-container .image-group {
+  display: flex;
+  gap: 1.2rem;
+  width: 100%;
+  height: 460px;
+}

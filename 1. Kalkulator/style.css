@@ -1,0 +1,75 @@
+* {
+  font-size: 38px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.head-text {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.main-content {
+  padding: 6px;
+  margin: 20px;
+  border: 2px white solid;
+  border-radius: 10px;
+  max-width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.main {
+  margin: 4px;
+}
+
+.layer {
+  width: 100%;
+  margin-right: 60px;
+  text-align: end;
+  display: flex;
+  gap: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.grid-items1 {
+  margin: 5px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 10px;
+  text-align: center;
+  width: 60px;
+  outline: none;
+  height: 60px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  cursor: pointer;
+}
+.variant1-grid {
+  background-color: rgb(36, 31, 31);
+}
+.variant2-grid {
+  background-color: rgb(48, 48, 48);
+}
+.variant3-grid {
+  background-color: rgb(255, 115, 0);
+}

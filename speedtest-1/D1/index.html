@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+      <label for="image">Pilih Gambar:</label>
+      <input type="file" accept="image/*" name="image" id="image" />
+      <br />
+      <label for="watermark">
+        <input type="checkbox" name="watermark" id="watermark" value="1" />
+        Tambahkan Watermark
+      </label>
+      <br />
+      <button type="submit">SUBMIT</button>
+    </form>
+
+    <div id="image-preview">
+      <h2>Gambar Asli:</h2>
+      <img src="" id="original-image" alt="Gambar Asli" />
+      <h2>Thumbnail:</h2>
+      <img src="" id="resize-image" alt="Gambar Thumbnail" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+  padding-top: 7rem;
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+}
+.title {
+  margin: 20px 0;
+}
+.music-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border: 2px black solid;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition-duration: 0.3s;
+  width: 100%;
+}
+.item:hover {
+  background-color: rgba(0, 175, 175, 0.5);
+}
+.music-title {
+  font-size: 20px;
+}
+.music-author {
+  font-size: 16px;
+}
+.music-duration {
+  font-size: 16px;
+}
+.lucide1,
+.lucide2 {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.range {
+  width: 100%;
+}
+.range-container {
+  padding: 10px 40px;
+  fill: black;
+}
+.bottom-bar {
+  padding: 12px;
+  background-color: hsla(0, 0%, 50%, 0.5);
+}

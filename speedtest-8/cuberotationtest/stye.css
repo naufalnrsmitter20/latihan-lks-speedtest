@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: cornsilk;
+  margin: 0;
+  perspective: 800px; /* Memberikan efek kedalaman 3D */
+}
+
+.cube-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 5s infinite linear;
+  -webkit-animation: rotateCube 5s infinite linear;
+}
+
+.sub-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+/* Gaya umum untuk semua sisi */
+.face {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+/* Menyesuaikan posisi tiap sisi */
+.front {
+  transform: translateZ(150px);
+  background: white;
+}
+.back {
+  transform: rotateY(180deg) translateZ(150px);
+  background: aqua;
+}
+.left {
+  transform: rotateY(-90deg) translateZ(150px);
+  background: red;
+}
+.right {
+  transform: rotateY(90deg) translateZ(150px);
+  background: blue;
+}
+.top {
+  transform: rotateX(90deg) translateZ(150px);
+  background: chartreuse;
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+  background: darksalmon;
+}
+
+/* Efek Rotasi */
+@keyframes rotateCube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
